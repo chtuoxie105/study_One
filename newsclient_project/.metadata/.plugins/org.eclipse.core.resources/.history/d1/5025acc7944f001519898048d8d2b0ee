@@ -1,0 +1,54 @@
+package com.example.newsclient.bean;
+
+public class VideoBean {
+	private String title;
+	private String description;
+	private String playCount;
+	private String cover;
+	private String mp4_url;
+	private String replyCount;
+	private String length;
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getPlayCount() {
+		return playCount;
+	}
+	public void setPlayCount(String playCount) {
+		this.playCount = playCount;
+	}
+	public String getCover() {
+		return cover;
+	}
+	public void setCover(String cover) {
+		this.cover = cover;
+	}
+	public String getMp4_url() {
+		return mp4_url;
+	}
+	public void setMp4_url(String mp4_url) {
+		this.mp4_url = mp4_url;
+	}
+	public String getReplyCount() {
+		return replyCount;
+	}
+	public void setReplyCount(String replyCount) {
+		this.replyCount = replyCount;
+	}
+	public String getLength() {
+		return length;
+	}
+	public void setLength(String length) {
+		this.length = length;
+	}
+	
+}

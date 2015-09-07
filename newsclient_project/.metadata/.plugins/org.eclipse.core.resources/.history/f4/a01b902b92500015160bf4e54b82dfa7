@@ -1,0 +1,30 @@
+package com.example.newsclient.slidingmenu.activity;
+
+import com.example.newsclient.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.webkit.WebView;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class ListViewItemActivity extends Activity {
+	private TextView titleTxt, originTxt, reconmendTxt;
+	private ImageView mImgBg;
+	private WebView mWebView;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.listview_item__webviewlayout);
+	}
+
+	public void loadView() {
+		mImgBg = (ImageView) findViewById(R.id.item_listview_image);
+		mWebView = (WebView) findViewById(R.id.item_listview_webview);
+		titleTxt = (TextView) findViewById(R.id.item_listview_title);
+		originTxt = (TextView) findViewById(R.id.item_listview_origin);
+		reconmendTxt = (TextView) findViewById(R.id.item_listview_recomenmend);
+
+	}
+}

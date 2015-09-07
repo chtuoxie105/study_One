@@ -1,0 +1,13 @@
+package com.example.newsclient.activity.main;
+
+import com.example.newsclient.slidingmenu.activity.RequestManager;
+
+import android.app.Application;
+
+public class App extends Application {
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		RequestManager.init(this);
+	}
+}

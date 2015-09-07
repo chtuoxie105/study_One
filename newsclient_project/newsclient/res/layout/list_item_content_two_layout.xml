@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/list_item_two_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陕西特大交通事故34人被处罚"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/list_item_two_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_item_two_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/list_item_two_title"
+            android:gravity="center"
+            android:text="12450人跟帖"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/list_item_two_img_one"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/list_item_two_img_two"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/list_item_two_img_three"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</LinearLayout>

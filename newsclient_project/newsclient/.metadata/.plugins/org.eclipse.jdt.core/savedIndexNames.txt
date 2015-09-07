@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+E:\androids\newsclient\.metadata\.plugins\org.eclipse.jdt.core

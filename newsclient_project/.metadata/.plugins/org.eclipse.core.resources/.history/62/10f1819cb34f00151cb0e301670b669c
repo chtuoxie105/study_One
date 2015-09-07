@@ -1,0 +1,16 @@
+package com.example.newsclient.slidingmenu.activity;
+
+import com.example.newsclient.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.SurfaceView;
+
+public class SurfaceActivity extends Activity {
+	private SurfaceView surface;
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.test_surface_layout);
+	surface = (SurfaceView) findViewById(R.id.test_surface);
+	}
+}

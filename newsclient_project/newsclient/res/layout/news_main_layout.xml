@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/public_title_layout" />
+
+    <RadioGroup
+        android:id="@+id/news_rabiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <RadioButton
+            android:id="@+id/news_headline_rabiobtn"
+            style="@style/news_tab_option_radiobtn"
+            android:text="@string/news_head"
+            android:textColor="@drawable/selector_news_main_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/news_recreation_radiobtn"
+            style="@style/news_tab_option_radiobtn"
+            android:text="@string/news_recreation"
+            android:textColor="@drawable/selector_news_main_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/news_hotspot_radiobtn"
+            style="@style/news_tab_option_radiobtn"
+            android:text="@string/news_hotspot"
+            android:textColor="@drawable/selector_news_main_radiobutton" />
+
+        <RadioButton
+            android:id="@+id/news_direct_radiobtn"
+            style="@style/news_tab_option_radiobtn"
+            android:text="@string/news_direct"
+            android:textColor="@drawable/selector_news_main_radiobutton" />
+
+        <ImageView
+            android:id="@+id/news_img_show_more"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/biz_news_column_subscribe_group_item_icon_down" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/news_content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light" >
+
+
+    </android.support.v4.view.ViewPager>
+        <FrameLayout
+            android:id="@+id/news_all_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</LinearLayout>

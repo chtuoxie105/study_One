@@ -1,0 +1,4 @@
+int string generic_error 0x7f020002
+int string generic_server_down 0x7f020000
+int string json_parser_error 0x7f020003
+int string no_internet 0x7f020001

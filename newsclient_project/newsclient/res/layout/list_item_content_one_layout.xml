@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="2dp" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/list_item_one_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:id="@+id/list_item_one_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/list_item_one_img"
+            android:text="陕西特大交通事故34人被处罚"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/list_item_one_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_item_one_title"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/list_item_one_img"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:text="事故曾造成35人死亡、11人受伤，经济损失2300万余元。"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/list_item_one_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="1242人跟帖"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <me.maxwin.view.XListView
+        android:id="@+id/sliding_video_xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+           android:background="@color/video_list_item">
+    </me.maxwin.view.XListView>
+	    <RelativeLayout
+        android:id="@+id/listview_refresh__videolayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ProgressBar
+            android:id="@+id/progressbar_video_lsitview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/progressbar_video_lsitview"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+     />
+    </RelativeLayout>
+</FrameLayout>
